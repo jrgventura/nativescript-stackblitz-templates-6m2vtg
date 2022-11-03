@@ -1,0 +1,41 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Cibertec App" icon="" />
+    <TabView
+  loaded="onLoaded"
+  selectedIndex="{{tabSelectedIndex}}"
+  selectedIndexChanged="onSelectedIndexChanged"
+  androidTabsPosition="bottom"
+  androidOffscreenTabLimit="0"
+>
+  <TabViewItem title="Profile">
+    <StackLayout>
+      <Label
+        text="{{ tabSelectedIndexResult }}"
+        class="h2 m-t-16 text-center"
+        textWrap="true"
+      />
+      <Button text="Change Tab" tap="changeTab" class="btn btn-primary btn-active" />
+    </StackLayout>
+  </TabViewItem>
+  <TabViewItem title="Stats">
+    <StackLayout>
+      <Label
+        text="{{ tabSelectedIndexResult }}"
+        class="h2 m-t-16 text-center"
+        textWrap="true"
+      />
+      <Button text="Change Tab" tap="changeTab" class="btn btn-primary btn-active" />
+    </StackLayout>
+  </TabViewItem>
+  <TabViewItem title="Settings">
+    <StackLayout>
+      <Label
+        text="{{ tabSelectedIndexResult }}"
+        class="h2 m-t-16 text-center"
+        textWrap="true"
+      />
+      <Button text="Change Tab" tap="changeTab" class="btn btn-primary btn-active" />
+    </StackLayout>
+  </TabViewItem>
+</TabView>
+</Page>

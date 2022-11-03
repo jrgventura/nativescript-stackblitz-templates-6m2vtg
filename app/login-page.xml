@@ -1,0 +1,57 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Cibertec App" icon="" />
+      <NavigationButton text="Go back" android.systemIcon="ic_menu_back" tap="goBack" />
+
+    <StackLayout class="p-4">
+        <Label text="Bienvenidos" class="text-3xl text-center" />
+        <TextField hint="Ingresa el correo" class="myClassTextField"/>
+        <TextField hint="Ingresa la clave" class="myClassTextField" style="text-align: left;"/>
+
+
+        <DatePicker
+          year="1980"
+          month="4"
+          day="20"
+          loaded="onDatePickerLoaded"
+          date="{{ date }}"
+          minDate="{{ minDate }}"
+          maxDate="{{ maxDate }}"
+        />
+
+        <TimePicker
+          hour="10"
+          minute="25"
+          loaded="onPickerLoaded"
+          row="2"
+          col="0"
+          colSpan="2"
+          class="m-15"
+          verticalAlignment="center"
+        />
+
+      <Switch checked="true" loaded="onSwitchLoaded" />
+
+      <SegmentedBar row="0" class="m-5" selectedIndex="{{ sbSelectedIndex }}">
+        <SegmentedBar.items>
+          <SegmentedBarItem title="Item 1" />
+          <SegmentedBarItem title="Item 2" />
+          <SegmentedBarItem title="Item 3" />
+        </SegmentedBar.items>
+      </SegmentedBar>
+
+      <SearchBar
+        id="searchBar"
+        hint="Enter search term here ..."
+        text="{{sbText}}"
+        clear="onClear"
+        submit="onSubmit"
+      />
+
+        <Button text="Ingresar" class="-primary" />
+    </StackLayout>
+
+    <StackLayout orientation="horizontal">
+    <Image src="res://icon" width="40" height="40" verticalAlignment="center" />
+    <Label text="ActionBar Title" fontSize="24" verticalAlignment="center" />
+  </StackLayout>
+</Page>

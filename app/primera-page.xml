@@ -1,0 +1,25 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Cibertec App" icon="resources/icon.png" />
+
+    <!-- Primero -->
+    <!-- <StackLayout backgroundColor="#eef7ff">
+
+        <label text="first" height="70" backgroundColor="#43b883" />
+        <label text="second" height="70" backgroundColor="#289062" />
+        <label text="third" height="70" backgroundColor="#1c6b48" />
+
+  </StackLayout>-->
+
+  <!-- Segundo -->
+  <!-- <StackLayout orientation="horizontal" backgroundColor="#eef7ff">
+
+        <label text="first" height="70" backgroundColor="#43b883" />
+        <label text="second" height="70" backgroundColor="#289062" />
+        <label text="third" height="70" backgroundColor="#1c6b48" />
+
+  </StackLayout> -->
+
+<Image src="resources/icon.png" stretch="aspectFill" />
+
+
+</Page>
