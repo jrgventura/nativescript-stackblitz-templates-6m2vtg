@@ -1,5 +1,5 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
-    <ActionBar title="Cibertec App" icon="resources/icon.png" />
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" >
+    <ActionBar title="Cibertec App" icon="~/icon.png" />
 
     <!-- Primero -->
     <!-- <StackLayout backgroundColor="#eef7ff">
@@ -19,7 +19,19 @@
 
   </StackLayout> -->
 
-<Image src="resources/icon.png" stretch="aspectFill" />
+      <!-- <Image src="~/icon.png" stretch="" /> -->
 
+      <StackLayout backgroundColor="#fff">
+            <Image src="https://www.logotypes101.com/logos/963/35773C86DF3D61D89BBCBF49CC80614C/cibertec_-_logo.png" class="myClassImage"/>
+
+            <TextField hint="Ingresa el correo" class="myClassTextField"/>
+
+            <TextField hint="Ingresa la clave" class="myClassTextField" style="text-align: left;"/>
+
+            <Button text="Ingresar" style="margin-top:100px;height:100px;" class="-primary -rounded-lg" />
+
+            <Button text="Registrarse" style="margin-top:50px;height:100px;background-color: green;" class="-primary -rounded-lg" />
+
+      </StackLayout>-->
 
 </Page>

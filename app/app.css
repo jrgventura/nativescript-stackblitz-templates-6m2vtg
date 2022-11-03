@@ -18,3 +18,9 @@ Button.-primary {
   text-align: left;
   height: 100px;
 }
+
+.myClassImage {
+  margin-top: 50px;
+  height: 300px;
+  width: 300px;
+}
